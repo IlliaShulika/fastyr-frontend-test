@@ -118,7 +118,13 @@ export default function UserDetail() {
   );
 }
 
-function ConfirmDeleteDialog({ onConfirm, onCancel }) {
+function ConfirmDeleteDialog({
+  onConfirm,
+  onCancel,
+}: {
+  onConfirm: () => void;
+  onCancel: () => void;
+}) {
   return (
     <AlertDialog open onOpenChange={onCancel}>
       <AlertDialogContent>
