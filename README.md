@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fastyr Frontend Test
 
-## Getting Started
+Welcome to the **Fastyr Frontend Test** project! This application showcases a responsive frontend setup using **Next.js**, **Apollo GraphQL**, **Shadcn UI**, and **Tailwind CSS**, demonstrating skills essential for a Senior Frontend Developer position.
 
-First, run the development server:
+## Project Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+This application is designed to demonstrate best practices in:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Project Structure**: Organized and maintainable project setup.
+- **Code Readability**: Clear, easy-to-follow code.
+- **GraphQL Integration**: Efficient data fetching and user-friendly UI components.
+- **Responsive Design**: Effective use of React.js/Next.js principles.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Key Routes and Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### `/users` - **Users Page**
 
-## Learn More
+- **Description**: Displays a list of users.
+- **Objective**: View all users, add new users.
+- **Components**: Shadcn UI Card, DataTable.
+- **GraphQL Operations**: Fetch all users, create a user.
 
-To learn more about Next.js, take a look at the following resources:
+### `/users/[id]` - **User Detail Page**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Description**: Details for a single user.
+- **Objective**: View, update, delete user details.
+- **Components**: Shadcn UI components for form and data display.
+- **GraphQL Operations**: Fetch user by ID, update, delete user.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### `/albums` - **Albums Page**
 
-## Deploy on Vercel
+- **Description**: Displays a list of albums.
+- **Objective**: View all albums, search/filter, bulk delete, import from CSV/XLSX with data validation.
+- **Components**: Shadcn UI DataTable, TanStack Table for search/filter.
+- **GraphQL Operations**: Fetch all albums, create an album.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### `/albums/[id]` - **Album Detail Page**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Description**: Details for a single album.
+- **Objective**: View, update, delete album details.
+- **Components**: Shadcn UI for album detail display and form handling.
+- **GraphQL Operations**: Fetch album by ID, update, delete album.
+
+### `/audio` - **Audio Recorder Page**
+
+- **Description**: Records and plays audio from the user's microphone.
+- **Objective**: Record audio, save to local storage in base64 format, playback with buffering.
+- **Components**: Custom recording/playback controls.
+- **Features**: Audio buffering, saving audio in base64 format.
+
+## Setup & Installation
+
+1. **Clone Repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/fastyr-frontend-test.git
+   ```
+
+2. **Install Dependencies**:
+
+   ```bash
+   npm install
+   ```
+
+3. **Run Project Locally**:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Deployment
+
+This project is deployed at [Deployment Link].
+
+## Additional Information
+
+- **GraphQL API**: Integrated with [https://graphqlzero.almansi.me/api](https://graphqlzero.almansi.me/api).
+- **Styling**: Tailwind CSS and Shadcn UI ensure a consistent and modern UI.
+- **Documentation**: Inline comments are provided for key logic to enhance code readability.
