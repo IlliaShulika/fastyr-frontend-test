@@ -68,9 +68,7 @@ export const GET_ALBUMS = gql`
 
 export const DELETE_ALBUM = gql`
   mutation DeleteAlbum($id: ID!) {
-    deleteAlbum(id: $id) {
-      id
-    }
+    deleteAlbum(id: $id)
   }
 `;
 
